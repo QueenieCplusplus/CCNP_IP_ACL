@@ -25,3 +25,20 @@ any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255
 * 延伸目的
 
 提供 SMTP 和 DNS 的服務
+
+* 實際意象
+
+        10.64.0.2
+          Server.  ------------- 10.64.0.0 - E0 - Router - S0 - --------    Internet
+          
+
+
+* 實作範例
+
+
+           R(config)#access-list 130 permit tcp any host 10.64.0.2 eq smtp
+           R(config)#access-list 130 permit udp any eq domain any
+           R(config)#int s0
+           R(config-if)#ip access-group 130 in
+
+
