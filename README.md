@@ -22,7 +22,7 @@ IP Access Lists
 
 * 指令語法
 
-          #access-list + list-number + permit or deny + tcp or udp or icmp + 
+          #access-list + list-number + permit or deny + tcp or udp or icmp or ip + 
            src addr + wildcard + src port +
            des addr + wildcard + des port
            
