@@ -21,3 +21,7 @@ Source-wildcard 來源的運算位元
 any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255.255
 
 # IP Extended Access List 延伸存取列表
+
+* 延伸目的
+
+提供 SMTP 和 DNS 的服務
