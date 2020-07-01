@@ -22,11 +22,15 @@ IP Access Lists
 
 * 指令語法
 
-          #access-list + list-number 
-           + permit or deny 
-           + tcp or udp or icmp or ip + 
-           src addr + wildcard + src port +
-           des addr + wildcard + des port
+          (conif)#access-list + list-number 
+                     + permit or deny 
+                     + tcp or udp or icmp or ip + 
+                     src addr + wildcard + src port +
+                     des addr + wildcard + des port
+           
+           (config)# int + number
+           
+           (config-if)#ip + list-number + in
            
  * 拒絕外來ICMP封包 ping 至自己主機
  
