@@ -33,8 +33,8 @@ IP Access Lists
  
           #access-list 100 deny icmp 10.64.0.2 0.0.0.0 any echo
           (config)#access-list 100 permit ip any any
-          (config)#int s1
-          (config-if)#ip access-group 100 in
+          (config)#int s1 
+          (config-if)#ip access-group 100 in // 將此存取表授予指定介面上
           
 
 # IP Extended Access List 延伸存取列表
