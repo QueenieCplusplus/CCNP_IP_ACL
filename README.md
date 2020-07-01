@@ -1,6 +1,9 @@
 # CCNP IP ACL
 IP Access Lists
 
+
+# IP Standard Access List 標準存取列表
+
 * 常用指令：
 
 access-list 存取列表
@@ -17,3 +20,4 @@ Source-wildcard 來源的運算位元
 
 any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255.255
 
+# IP Extended Access List 延伸存取列表
