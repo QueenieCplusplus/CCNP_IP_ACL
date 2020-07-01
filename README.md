@@ -42,3 +42,8 @@ any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255
            R(config-if)#ip access-group 130 in
 
 
+# Null int 空介面
+
+* 存在目的
+
+單純限制網路封包走向
