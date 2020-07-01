@@ -47,3 +47,18 @@ any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255
 * 存在目的
 
 單純限制網路封包走向，且不耗損 CPU 的存取控制方式。
+只要指定封包至此介面，便等同丟棄 drop 封包。
+
+* 指令語法
+
+                 #ip route + < des addr > + < mask > + int
+            
+
+* 實作範例
+
+            // 空介面的編號是 null 0
+            // 將送往 203.66.47.0 的封包丟棄
+
+            R(config)#ip route 203.66.47.0 255.255.255.0 null 0
+
+
