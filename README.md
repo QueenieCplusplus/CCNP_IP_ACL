@@ -25,8 +25,15 @@ IP Access Lists
           #access-list + list-number + permit or deny + tcp or udp or icmp + 
            src addr + wildcard + src port +
            des addr + wildcard + des port
+           
+ * 拒絕外來ICMP封包 ping 至自己主機
+ 
+ 
+          #access-list 100 deny icmp 10.64.0.2 0.0.0.0 any echo
+          (config)#access-lost 100 permit ip any any
+          (config)#int s1
+          (config-if)#ip access-group 100 in
           
-
 
 # IP Extended Access List 延伸存取列表
 
