@@ -6,19 +6,27 @@ IP Access Lists
 
 * 常用指令：
 
-access-list 存取列表
+        access-list 存取列表
 
-acess-list-number 存取列表號碼（預設為 1-99, 延伸號碼為 100-199）
+        acess-list-number 存取列表號碼（預設為 1-99, 延伸號碼為 100-199）
 
-permit 允許
+        permit 允許
 
-deny 拒絕
+        deny 拒絕
 
-Source 來源IP位址
+        Source 來源IP位址
 
-Source-wildcard 來源的運算位元
+        Source-wildcard 來源的運算位元
 
-any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255.255
+        any 任何位置，代表 Source address 0.0.0.0 和 Source-wildcard 255.255.255.255
+
+* 指令語法
+
+          #access-list + list-number + permit or deny + tcp or udp or icmp + 
+           src addr + wildcard + src port +
+           des addr + wildcard + des port
+          
+
 
 # IP Extended Access List 延伸存取列表
 
